@@ -31,6 +31,7 @@ job "grafana" {
 
     task "grafana" {
       driver = "docker"
+      user   = "472"
 
       config {
         image = "grafana/grafana:9.2.5"
